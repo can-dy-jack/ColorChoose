@@ -4,22 +4,44 @@
     padding: 0;
 }
 :root{
-    --base: #44cef6;
-
+    --base: #8BD7F1;
+    --bac: #f5f8fc;
     --ehuang: #fff143;
     --yahuang: #faff72;
     --yingcao: #eaff56;
     --liuhuang: #c9dd22;
-    --songhua: #bce672;
+    --nenlv: #bddd22;
+
+    --weilan: #70f3ff;
+    --lan: #44cef6;
+    --bilan: #3eede7;
+    --dianqing: #177cb0;
+    --shiqing: #1685a9;
+    --dianlan: #065279;
 }
+body{
+    background-color: var(--bac);
+}
+nav .logo{
+    width: 100%;
+    height: 150px;
+    background-color: var(--base);
+    display: flex;
+    align-items: center;justify-content: center;
+
+}
+nav .btn{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    background-color: white;
+}
+
 .body-box{
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-}
-.row{
-    margin-top: 150px;
 }
 /*@media screen and (max-width: 1300px) and (min-width: 1100px){*/
 /*    .row .column{*/
@@ -39,14 +61,24 @@
     width: 240px;
     height: 120px;
     border-radius: 15px;
-    background-color: var(--base);
-    transition: 0.3s;
+    background-color: var(--base); /* 默认颜色*/
+    transition: 0.4s;
+    position: relative;
+    font-family: Roboto,sans-serif;
 }
 .row .column:hover{
     transform: translateY(-3px);
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0,0,0,.1),
                 -5px 5px 10px rgba(0,0,0,.1);
+}
+.row .column h4{
+    position: absolute;
+    top: 10%;left: 10%;
+}
+.row .column p{
+    position: absolute;
+    bottom: 10%;left: 10%;
 }
 /* color set 1 */
 .row1 .column:nth-child(1){
@@ -62,8 +94,28 @@
     background-color: var(--liuhuang);
 }
 .row1 .column:nth-child(5){
-    background-color: var(--songhua);
+    background-color: var(--nenlv);
 }
 
 
 /* color set 2 */
+.row2 .column:nth-child(1){
+    background-color: var(--weilan);
+}
+.row2 .column:nth-child(2){
+    background-color: var(--lan);
+}
+.row2 .column:nth-child(3){
+    background-color: var(--bilan);
+}
+.row2 .column:nth-child(4){
+     background-color: var(--dianqing);
+}
+.row2 .column:nth-child(5){
+    background-color: var(--shiqing);
+}
+.row2 .column:nth-child(6){
+    background-color: var(--dianlan);
+}
+
+/* color set 3 */
