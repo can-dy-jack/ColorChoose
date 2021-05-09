@@ -1,0 +1,69 @@
+/* css */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --base: #44cef6;
+
+    --ehuang: #fff143;
+    --yahuang: #faff72;
+    --yingcao: #eaff56;
+    --liuhuang: #c9dd22;
+    --songhua: #bce672;
+}
+.body-box{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.row{
+    margin-top: 150px;
+}
+/*@media screen and (max-width: 1300px) and (min-width: 1100px){*/
+/*    .row .column{*/
+/*        width: 200px;*/
+/*        height: 100px;*/
+/*    }*/
+/*}*/
+/*@media screen and (max-width: 549px){*/
+/*    .row .column{*/
+/*        width: 60px;*/
+/*        height: 30px;*/
+/*    }*/
+/*}*/
+
+.row .column{
+    margin: 12px 6px;
+    width: 240px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: var(--base);
+    transition: 0.3s;
+}
+.row .column:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.1),
+                -5px 5px 10px rgba(0,0,0,.1);
+}
+/* color set 1 */
+.row1 .column:nth-child(1){
+    background-color: var(--ehuang);
+}
+.row1 .column:nth-child(2){
+    background-color: var(--yahuang);
+}
+.row1 .column:nth-child(3){
+    background-color: var(--yingcao);
+}
+.row1 .column:nth-child(4){
+    background-color: var(--liuhuang);
+}
+.row1 .column:nth-child(5){
+    background-color: var(--songhua);
+}
+
+
+/* color set 2 */
