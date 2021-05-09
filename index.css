@@ -6,18 +6,6 @@
 :root{
     --base: #8BD7F1;
     --bac: #f5f8fc;
-    --ehuang: #fff143;
-    --yahuang: #faff72;
-    --yingcao: #eaff56;
-    --liuhuang: #c9dd22;
-    --nenlv: #bddd22;
-
-    --weilan: #70f3ff;
-    --lan: #44cef6;
-    --bilan: #3eede7;
-    --dianqing: #177cb0;
-    --shiqing: #1685a9;
-    --dianlan: #065279;
 }
 body{
     background-color: var(--bac);
@@ -80,42 +68,3 @@ nav .btn{
     position: absolute;
     bottom: 10%;left: 10%;
 }
-/* color set 1 */
-.row1 .column:nth-child(1){
-    background-color: var(--ehuang);
-}
-.row1 .column:nth-child(2){
-    background-color: var(--yahuang);
-}
-.row1 .column:nth-child(3){
-    background-color: var(--yingcao);
-}
-.row1 .column:nth-child(4){
-    background-color: var(--liuhuang);
-}
-.row1 .column:nth-child(5){
-    background-color: var(--nenlv);
-}
-
-
-/* color set 2 */
-.row2 .column:nth-child(1){
-    background-color: var(--weilan);
-}
-.row2 .column:nth-child(2){
-    background-color: var(--lan);
-}
-.row2 .column:nth-child(3){
-    background-color: var(--bilan);
-}
-.row2 .column:nth-child(4){
-     background-color: var(--dianqing);
-}
-.row2 .column:nth-child(5){
-    background-color: var(--shiqing);
-}
-.row2 .column:nth-child(6){
-    background-color: var(--dianlan);
-}
-
-/* color set 3 */
