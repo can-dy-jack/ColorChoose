@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="icon" href="img/Web%201920%20–%201.png">
-
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 </head>
 <body>
+<script src=""></script>
 <nav>
     <div class="logo">
         <h1>ColorChoose</h1>
@@ -18,23 +20,28 @@
         <span>中国传统颜色</span>
     </div>
 </nav>
-    <div class="body-box">
+    <div class="body-box" id="color">
         <div class="row row1">
-            <div class="column">
-                <h4>鹅黄色</h4>
-                <p>#fff143</p>
-            </div>
-            <div class="column">
-                <h4>鸭黄色</h4>
-                <p>#faff72</p>
-            </div>
-            <div class="column">
+<!--            <div class="column" id="copyColor">-->
+<!--                <h4>鹅黄色</h4>-->
+<!--                <p id="colorvalue">#fff143</p>-->
+<!--            </div>-->
+<!--            <div class="column btn" data-clipboard-target="#f1">-->
+<!--                <h4>鸭黄色</h4>-->
+<!--                <p id="f1">#faff72</p>-->
+<!--            </div>-->
+            <colortemplate
+                    v-for="item in selectColor"
+                    v-bind:toget="item"
+                    v-bind:key="item.id">
+            </colortemplate>
+            <div class="column btn" data-clipboard-target="#f2">
                 <h4>樱草色</h4>
-                <p>#eaff56</p>
+                <p id="f2">#eaff56</p>
             </div>
-            <div class="column">
+            <div class="column btn" data-clipboard-target="#f3">
                 <h4>柳黄色</h4>
-                <p>#c9dd22</p>
+                <p id="f3">#c9dd22</p>
             </div>
             <div class="column">
                 <h4>嫩绿</h4>
@@ -42,157 +49,47 @@
             </div>
         </div>
         <div class="row row2">
+            <colortemplate
+                    v-for="item in selectColor2"
+                    v-bind:toget="item"
+                    v-bind:key="item.id">
+            </colortemplate>
+
             <div class="column">
-                <h4>蔚蓝色</h4>
-                <p>#70f3ff</p>
-            </div>
-            <div class="column">
-                <h4>蓝色</h4>
-                <p>#44cef6</p>
-            </div>
-            <div class="column">
-                <h4>碧蓝色</h4>
-                <p>#3eede7</p>
-            </div>
-            <div class="column">
-                <h4>靛青色</h4>
-                <p>#177cb0</p>
-            </div>
-            <div class="column">
-                <h4>石青色</h4>
-                <p>#1685a9</p>
-            </div>
-            <div class="column">
-                <h4>靛蓝色</h4>
-                <p>#065279</p>
+                <!-- Target -->
+                <h4><input id="foo" value="https://github.com/zenorocha/clipboard.js.git"></h4>
+                <!-- Trigger -->
+                <p><button class="btn" data-clipboard-target="#foo">
+                    <img src="img/clippy.svg" alt="Copy to clipboard">
+                </button></p>
             </div>
         </div>
         <div class="row row3">
-            <div class="column">
-                <h4>纯白</h4>
-                <p>#ffffff</p>
-            </div>
-            <div class="column">
-                <h4>铅白</h4>
-                <p>#f0f0f4</p>
-            </div>
-            <div class="column">
-                <h4>银白</h4>
-                <p>#e9e7ef</p>
-            </div>
-            <div class="column">
-                <h4>雪白</h4>
-                <p>#f0fcff</p>
-            </div>
-            <div class="column">
-                <h4>霜白</h4>
-                <p>#e9f1f6</p>
-            </div>
-            <div class="column">
-                <h4>莹白</h4>
-                <p>#e3f9fd</p>
-            </div>
-            <div class="column">
-                <h4>月白</h4>
-                <p>#d6ecf0</p>
-            </div>
-            <div class="column">
-                <h4>象牙白</h4>
-                <p>#fffbf0</p>
-            </div>
-            <div class="column">
-                <h4>白粉</h4>
-                <p>#fff2df</p>
-            </div>
-            <div class="column">
-                <h4>鱼肚白</h4>
-                <p>#fcefe8</p>
-            </div>
-            <div class="column">
-                <h4>缟</h4>
-                <p>#f2ecde</p>
-            </div>
-            <div class="column">
-                <h4>荼白</h4>
-                <p>#f3f9f1</p>
-            </div>
-            <div class="column">
-                <h4>鸭卵青</h4>
-                <p>#e0eee8</p>
-            </div>
-            <div class="column">
-                <h4>素</h4>
-                <p>#e0f0e9</p>
-            </div>
-            <div class="column">
-                <h4>青白</h4>
-                <p>#c0ebd7</p>
-            </div>
-            <div class="column">
-                <h4>蟹壳青</h4>
-                <p>#bbcdc5</p>
-            </div>
+            <colortemplate
+                    v-for="item in selectColor3"
+                    v-bind:toget="item"
+                    v-bind:key="item.id">
+            </colortemplate>
         </div>
         <div class="row row4">
-            <div class="column">
-                <h4>朱砂</h4>
-                <p>#ff461f</p>
-            </div>
-            <div class="column">
-                <h4>火红</h4>
-                <p>#ff2d51</p>
-            </div>
-            <div class="column">
-                <h4>妃色</h4>
-                <p>#ed5736</p>
-            </div>
-            <div class="column">
-                <h4>朱膘</h4>
-                <p>#f36838</p>
-            </div>
-            <div class="column">
-                <h4>洋红</h4>
-                <p>#ff4777</p>
-            </div>
-            <div class="column">
-                <h4>品红</h4>
-                <p>#f00056</p>
-            </div>
+            <colortemplate
+                    v-for="item in selectColor4"
+                    v-bind:toget="item"
+                    v-bind:key="item.id">
+            </colortemplate>
         </div>
         <div class="row row5">
-            <div class="column">
-                <h4>松花色</h4>
-                <p>#bce672</p>
-            </div>
-            <div class="column">
-                <h4>柳绿</h4>
-                <p>#afdd22</p>
-            </div>
-            <div class="column">
-                <h4>葱黄</h4>
-                <p>#a3d900</p>
-            </div>
-            <div class="column">
-                <h4>葱绿</h4>
-                <p>#9ed900</p>
-            </div>
-            <div class="column">
-                <h4>豆绿</h4>
-                <p>#9ed048</p>
-            </div>
-            <div class="column">
-                <h4>豆青</h4>
-                <p></p>
-            </div>
+            <colortemplate
+                    v-for="item in selectColor5"
+                    v-bind:toget="item"
+                    v-bind:key="item.id">
+            </colortemplate>
         </div>
     </div>
 <footer>
-<!--    <div class="column">
-            <h4></h4>
-            <p></p>
-        </div> -->
     <div></div>
 </footer>
     <script src="index.js"></script>
+    <script src="clipboard.js"></script>
 </body>
 </html>

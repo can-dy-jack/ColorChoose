@@ -31,6 +31,12 @@
     --su: #e0f0e9;
     --qingbai: #c0ebd7;
     --xiekeqing: #bbcdc5;
+    --huabai: #c2ccd0;
+    --laoyin: #bacac6;
+    --shuise: #88ada6;
+    --cangbai: #75878a;
+    --gray: #808080;
+
 
     --zhusha: #ff461f;
     --huohong: #ff2d51;
@@ -38,6 +44,11 @@
     --zhubiao: #f36838;
     --yanghong: #ff4777;
     --pinhong: #f00056;
+    --fenhong: #ffb3a7;
+    --taohong: #f47983;
+    --haitanghong: #db5a6b;
+    --yingtaohong: #c93756;
+    --tuoyan: #f9906f;
 
     --songhua: #bce672;
     --liulv: #afdd22;
@@ -82,9 +93,13 @@
 }
 .row2 .column:nth-child(6){
     background-color: var(--dianlan);
+    color: white;
 }
 
 /* color set 3 */
+.row3 .column:nth-child(n+15){
+    color: white;
+}
 .row3 .column:nth-child(1){
     background-color: var(--chunbai);
 }
@@ -133,7 +148,25 @@
 .row3 .column:nth-child(16){
     background-color: var(--xiekeqing);
 }
+.row3 .column:nth-child(17){
+    background-color: var(--huabai);
+}
+.row3 .column:nth-child(18){
+    background-color: var(--laoyin);
+}
+.row3 .column:nth-child(19){
+    background-color: var(--shuise);
+}
+.row3 .column:nth-child(20){
+    background-color: var(--cangbai);
+}
+.row3 .column:nth-child(21){
+    background-color: var(--gray);
+}
 /* color set 4 */
+.row4 .column{
+    color: white;
+}
 .row4 .column:nth-child(1){
     background-color: var(--zhusha);
 }
@@ -152,6 +185,19 @@
 .row4 .column:nth-child(6){
     background-color: var(--pinhong);
 }
+.row4 .column:nth-child(7){
+    background-color: var(--fenhong);
+}
+.row4 .column:nth-child(8){
+    background-color: var(--taohong);
+}.row4 .column:nth-child(9){
+     background-color: var(--haitanghong);
+ }
+.row4 .column:nth-child(10){
+    background-color: var(--yingtaohong);
+}.row4 .column:nth-child(11){
+     background-color: var(--tuoyan);
+ }
 
 /* color set 5 */
 .row5 .column:nth-child(1){
