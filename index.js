@@ -1,12 +1,17 @@
 Vue.component('colortemplate',{
     props: ['toget'],
-    template: '<div class="column colorbox"><h4>{{toget.ColorText}}</h4><p>{{toget.Color}}</p><textarea name="copy" class="copy-content" style="opacity: 0">{{toget.Color}}</textarea></div>'
+    template: '<div class="column colorbox" title="点击复制到剪贴板">' +
+        '<h4>{{toget.ColorText}}</h4>' +
+        '<p>{{toget.Color}}</p>' +
+        '<textarea name="copy" class="copy-content" style="opacity: 0">{{toget.Color}}</textarea>' +
+        '</div>'
 })
 
 var app = new Vue({
     el: '#color',
     data: {
-        message: 'vue',
+        // MouseOverText: '点击复制到剪贴板',
+        // CopyDownText: '已复制到剪贴板',
         selectColor: [
             {id: '0',ColorText: '鹅黄色', Color: '#fff143'},
             {id: '1',ColorText: '鸭黄色', Color: '#faff72'},
