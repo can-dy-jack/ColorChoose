@@ -1,6 +1,6 @@
 Vue.component('colortemplate',{
     props: ['toget'],
-    template: '<div class="column"><h4>{{toget.ColorText}}</h4><p>{{toget.Color}}</p></div>'
+    template: '<div class="column colorbox"><h4>{{toget.ColorText}}</h4><p>{{toget.Color}}</p><textarea name="copy" class="copy-content" style="opacity: 0">{{toget.Color}}</textarea></div>'
 })
 
 var app = new Vue({
@@ -9,7 +9,10 @@ var app = new Vue({
         message: 'vue',
         selectColor: [
             {id: '0',ColorText: '鹅黄色', Color: '#fff143'},
-            {id: '1',ColorText: '鸭黄色', Color: '#faff72'}
+            {id: '1',ColorText: '鸭黄色', Color: '#faff72'},
+            {id: '2',ColorText: '樱草色', Color: '#eaff56'},
+            {id: '3',ColorText: '柳黄色', Color: '#c9dd22'},
+            {id: '4',ColorText: '嫩绿', Color: '#bddd22'}
         ],
         selectColor2: [
             {id: '0',ColorText: '蔚蓝色', Color: '#70f3ff'},
@@ -17,7 +20,7 @@ var app = new Vue({
             {id: '2',ColorText: '碧蓝色', Color: '#3eede7'},
             {id: '3',ColorText: '靛青色', Color: '#177cb0'},
             {id: '4',ColorText: '石青色', Color: '#1685a9'},
-            {id: '7',ColorText: '靛蓝色', Color: '#065279'}
+            {id: '5',ColorText: '靛蓝色', Color: '#065279'}
         ],
         selectColor3: [
             {id: '0',ColorText: '纯白', Color: '#ffffff'},
