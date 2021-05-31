@@ -1,0 +1,52 @@
+.color-text{
+    height: 35px;
+    display: flex;align-items: center;justify-content: center;
+}
+.color-text .ct1 .icons{
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.2s;cursor: pointer;
+}
+.color-text .ct1 .icons:hover{
+    background-color: #e1e2e1;
+}
+
+
+.colorbox{
+    height: calc(100vh - 87px);
+    width: 100%;
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: space-between;
+}
+.colorbox .but {
+    cursor: pointer;
+    height: 100px;
+    width: 50px;
+    background-color: rgb(245,245,245);
+    opacity: 0.3;transition: 0.2s;
+    transform: translateY(-40px);
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.colorbox .b-left{
+    border-radius: 0 10px 10px 0;
+}
+.colorbox .b-right{
+    border-radius: 10px 0 0 10px;
+}
+.colorbox .but:hover {
+   opacity: 0.45;
+}
+.colorbox .but .icon{
+    fill: #333;
+}
+.colorbox .but:hover .icon{
+    fill: black;
+    transform: scale(1.1);
+}

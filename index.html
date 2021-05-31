@@ -18,19 +18,12 @@
         <h1>ColorChoose</h1>
     </div>
     <div class="btn">
-        <span>中国传统颜色</span>
+        <a href="#color">中国传统颜色</a>
+        <a href="lg/lg.html">渐变色</a>
     </div>
 </nav>
     <div class="body-box" id="color">
         <div class="row row1">
-<!--            <div class="column" id="copyColor">-->
-<!--                <h4>鹅黄色</h4>-->
-<!--                <p id="colorvalue">#fff143</p>-->
-<!--            </div>-->
-<!--            <div class="column btn" data-clipboard-target="#f1">-->
-<!--                <h4>鸭黄色</h4>-->
-<!--                <p id="f1">#faff72</p>-->
-<!--            </div>-->
             <colortemplate
                     v-for="item in selectColor"
                     v-bind:toget="item"
@@ -43,15 +36,6 @@
                     v-bind:toget="item"
                     v-bind:key="item.id">
             </colortemplate>
-
-            <div class="column">
-                <!-- Target -->
-                <h4><input id="foo" value="https://github.com/zenorocha/clipboard.js.git"></h4>
-                <!-- Trigger -->
-                <p><button class="btn" data-clipboard-target="#foo">
-                    <img src="img/clippy.svg" alt="Copy to clipboard">
-                </button></p>
-            </div>
         </div>
         <div class="row row3">
             <colortemplate

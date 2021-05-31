@@ -13,10 +13,10 @@ body{
 nav .logo{
     width: 100%;
     height: 150px;
-    background: linear-gradient(to right,#44cef6,#8BD7F1,#3eede7);
+    background: linear-gradient(to right,rgb(69, 206, 246),rgb(169, 206, 246));
     display: flex;
     align-items: center;justify-content: center;
-
+    color: #fff2df;
 }
 nav .btn{
     width: 100%;
